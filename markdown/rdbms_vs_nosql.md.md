@@ -1,0 +1,9 @@
+## Database Recommendation
+
+For a healthcare startup building a patient management system, I would recommend using a relational database such as MySQL. Healthcare applications require high reliability and strict data consistency because patient records, prescriptions, diagnoses, and billing information must always remain accurate. Relational databases follow the ACID principles (Atomicity, Consistency, Isolation, and Durability), which guarantee safe and reliable transactions. For example, when updating a patient's treatment details and billing records, both updates must succeed together. This prevents partial updates and ensures that medical data remains consistent.
+
+MongoDB and other NoSQL databases generally follow the BASE model (Basically Available, Soft state, Eventually consistent). This model improves scalability and flexibility for handling large volumes of diverse or unstructured data. However, it does not guarantee the same level of strict consistency as ACID-compliant relational databases. In healthcare systems, eventual consistency can be risky because doctors and medical staff depend on accurate and real-time patient information for decision-making.
+
+According to the CAP theorem, distributed systems must balance consistency, availability, and partition tolerance. Healthcare systems typically prioritize consistency and reliability over maximum scalability. Therefore, MySQL is more suitable for storing critical patient records and managing core healthcare transactions.
+
+However, if the startup also introduces a fraud detection module that analyzes large amounts of behavioral or transaction data, MongoDB could be useful for that component. NoSQL databases handle large-scale analytics and flexible data structures efficiently. In such a case, a hybrid architecture could be used where MySQL manages patient records while MongoDB supports high-volume analytical workloads.
