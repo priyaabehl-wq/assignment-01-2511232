@@ -1,0 +1,50 @@
+[
+  {
+    "product_id": "E1001",
+    "name": "Samsung 55 inch Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 52000,
+    "specifications": {
+      "screen_size": "55 inch",
+      "resolution": "4K UHD",
+      "voltage": "220-240V",
+      "smart_tv": true
+    },
+    "warranty_years": 2,
+    "ratings": [4, 5, 5, 4],
+    "available_colors": ["Black"]
+  },
+
+  {
+    "product_id": "C2001",
+    "name": "Men's Cotton T-Shirt",
+    "category": "Clothing",
+    "brand": "Nike",
+    "price": 1200,
+    "sizes_available": ["S", "M", "L", "XL"],
+    "material": "100% Cotton",
+    "colors": ["Black", "White", "Blue"],
+    "care_instructions": {
+      "wash": "Machine Wash",
+      "dry": "Tumble Dry Low"
+    },
+    "ratings": [5, 4, 4]
+  },
+
+  {
+    "product_id": "G3001",
+    "name": "Organic Almond Milk",
+    "category": "Groceries",
+    "brand": "Alpro",
+    "price": 350,
+    "expiry_date": "2024-12-15",
+    "nutrition": {
+      "calories": 60,
+      "protein_g": 1.5,
+      "fat_g": 2.5
+    },
+    "ingredients": ["Almonds", "Water", "Sea Salt"],
+    "storage": "Keep Refrigerated"
+  }
+]
